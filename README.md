@@ -8,14 +8,15 @@
 - Сортировка студентов по успеваемости, основанная на среднем балле
 
 ## Структура класса Student
-@dataclass
-class Student:
-    name: str     # Имя студента
-    age: int      # Возраст студента
-    major: str    # Специальность студента
-    gpa: float    # Средний балл студента
 
-### Методы класса 
+    @dataclass  
+    class Student:  
+        name: str     # Имя студента  
+        age: int      # Возраст студента  
+        major: str    # Специальность студента  
+        gpa: float    # Средний балл студента  
+
+## Методы класса 
 - display_info() - Выводит полную информацию о студенте
 - calculate_grade() -> str - Возвращает текстовую оценку на основе среднего балла
 
@@ -26,26 +27,26 @@ class Student:
 - 0.0-2.4    Неудовлетворительно
 
 ## Пример вывода программы
-Имя студента: Alice, возраст студента: 20, Специальность: Computer Science, Средний балл: 3.8
-Имя студента: Bob, возраст студента: 22, Специальность: Engineering, Средний балл: 3.2
-Имя студента: Charlie, возраст студента: 21, Специальность: Mathematics, Средний балл: 4.5
-Имя студента: David, возраст студента: 23, Специальность: Physics, Средний балл: 2.7
-Имя студента: Eve, возраст студента: 19, Специальность: Biology, Средний балл: 3.9
-Имя студента: Alice, возраст студента: 20, Специальность: Computer Science, Средний балл: 3.8
-Are Alice and Bob the same student? False
-Are Alice and Eve the same student? False
-Are Alice and Alice the same student? True
-Alice - Grade: Хорошо
-Bob - Grade: Удовлетворительно
-Charlie - Grade: Отлично
-David - Grade: Удовлетворительно
-Eve - Grade: Хорошо
-Alice - Grade: Хорошо
-
-#Сортировка
-Charlie, 4.5, "Отлично"
-Eve, 3.9, "Хорошо"
-Alice, 3.8, "Хорошо"
-Alice, 3.8, "Хорошо"
-Bob, 3.2, "Удовлетворительно"
-David, 2.7, "Удовлетворительно"
+Имя студента: Alice, возраст студента: 20, Специальность: Computer Science, Средний балл: 3.8  
+Имя студента: Bob, возраст студента: 22, Специальность: Engineering, Средний балл: 3.2  
+Имя студента: Charlie, возраст студента: 21, Специальность: Mathematics, Средний балл: 4.5  
+Имя студента: David, возраст студента: 23, Специальность: Physics, Средний балл: 2.7  
+Имя студента: Eve, возраст студента: 19, Специальность: Biology, Средний балл: 3.9  
+Имя студента: Alice, возраст студента: 20, Специальность: Computer Science, Средний балл: 3.8  
+Are Alice and Bob the same student? False  
+Are Alice and Eve the same student? False  
+Are Alice and Alice the same student? True  
+Alice - Grade: Хорошо  
+Bob - Grade: Удовлетворительно  
+Charlie - Grade: Отлично  
+David - Grade: Удовлетворительно  
+Eve - Grade: Хорошо  
+Alice - Grade: Хорошо   
+  
+#Сортировка  
+Charlie, 4.5, "Отлично"  
+Eve, 3.9, "Хорошо"  
+Alice, 3.8, "Хорошо"  
+Alice, 3.8, "Хорошо"  
+Bob, 3.2, "Удовлетворительно"  
+David, 2.7, "Удовлетворительно"  
