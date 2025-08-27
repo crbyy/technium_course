@@ -30,8 +30,10 @@ class Stack:
 
 stack1 = Stack()
 
-expression = "3425*+-"
+expression = "3 41 2 5 * + -".split()
 
+
+print(expression)
 for token in expression:
     if token in "+-*/":
         if token == "+":
