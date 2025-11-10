@@ -24,6 +24,12 @@ class MyDict:
             self._values.pop(index)
             self._keys.pop(index)
 
+    def __contains__(self, key):
+        if key in self._keys:
+            return True
+        else:
+            return False
+
     def keys(self):
         return self._keys
 
@@ -56,5 +62,5 @@ del my_dict['age']
 print(my_dict.keys())  # Вернет ['name']
 print(my_dict.values())  # Вернет ['Alice']
 print(my_dict.items())
-print(my_dict.__str__())
+print(my_dict)
 
